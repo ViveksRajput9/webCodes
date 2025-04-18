@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Register | Guest Lecture on AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Project1.css">
+  <style>
+    body {
+      background-color: #f0f6ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="register-container">
+    <h2>Sports Registration</h2>
+    <form id="registerForm" onsubmit="submitForm(event)">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" required>
+
+      <label for="Sport">Sport</label>
+      <select id="Sport" required>
+        <option value="">Select your Sport</option>
+        <option>Cricket</option>
+        <option>Football</option>
+        <option>Basketball</option>
+        <option>100m Race</option>
+        <option>Chess</option>
+        <option>lamon Spoon Race</option>
+        <option>Tug of War</option>
+      </select>
+
+      <label for="year">Year</label>
+      <select id="year" required>
+        <option value="">Select year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+        <option>PG</option>
+      </select>
+
+      <button type="submit" class="submit-btn">Submit Registration</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMessage">
+      ✅ Thank you for registering! <br> We look forward to seeing you at the event.
+    </div>
+
+    <a href="Sports.html" class="back-link">← Back to Event Info</a>
+  </div>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      document.getElementById("registerForm").style.display = "none";
+      document.getElementById("thankYouMessage").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

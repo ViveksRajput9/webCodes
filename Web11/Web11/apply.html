@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admission Application Form</title>
+  <link rel="stylesheet" href="Project1.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Admission Application Form</h2>
+
+    <form  method="GET"> 
+ 
+      <label>Full Name</label>
+      <input type="text" name="fullname" required>
+
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" required>
+
+      <label>Date of Birth</label>
+      <input type="date" name="dob" required>
+
+      <label>Gender</label>
+      <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label>Address</label>
+      <textarea name="address" rows="3" required></textarea>
+
+      <label>Select Course</label>
+      <select name="course" required>
+        <option value="">-- Choose Course --</option>
+        <option>BCA</option>
+        <option>Medical Sciences</option>
+        <option>B.Tech (CS)</option>
+        <option>MBA (Finance)</option>
+        <option>MCA</option>
+      </select>
+
+      <label>Upload 12th Marksheet</label>
+      <input type="file" name="marksheet" accept=".pdf,.jpg,.png" required >
+
+      <label>Upload ID Proof (Aadhar/PAN)</label>
+      <input type="file" name="idproof" accept=".pdf,.jpg,.png" required>
+
+      <button type="submit">Submit Application</button>
+
+    </form>
+  </div>
+
+  
+
+</body>
+</html>
